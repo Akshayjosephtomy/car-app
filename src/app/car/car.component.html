@@ -21,14 +21,14 @@
                     <td>{{i.car}}</td>
                     <td>{{i.car_model}}</td>
                     <td>{{i.car_color}}</td>
-                    <td><img src="{{i.car_model_year}}" alt="N/A"></td>
+                    <td>{{i.car_model_year}}</td>
                     <td>{{i.price}}</td>
-                    <td>*ngIf="i.availability"
+                    <td *ngIf="i.availability">
                         <div class="alert alert-success" role="alert">
                             Yes
                           </div>
                     </td>
-                    <td>*ngIf="! i.availability"
+                    <td *ngIf="! i.availability">
                         <div class="alert alert-danger" role="alert">
                             No
                           </div>
